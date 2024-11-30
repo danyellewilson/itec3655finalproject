@@ -3,66 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A website for gardening enthusiasts with tips, advice, and resources.">
-    <title>Gardening Hobbyist</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>My Website</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Title Styling */
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        /* Navigation Menu Styles */
+        nav {
+            background-color: #333;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+            display: block;
+        }
+
+        nav ul li a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+    </style>
 </head>
 <body>
-    <!-- Header Section -->
+
+    <!-- Title Section -->
     <header>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Gardening</a></li>
-                <li><a href="#tips">Gardening Tips</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-        <h1>Welcome to Gardening Hobbyist</h1>
-        <p>Your online guide to everything gardening!</p>
+        <h1>Welcome to My Website</h1>
     </header>
 
-    <!-- Main Content Section -->
-    <main>
-        <!-- About Gardening Section -->
-        <section id="about">
-            <h2>About Gardening</h2>
-            <p>Gardening is a relaxing and rewarding hobby that allows you to grow plants, flowers, and vegetables. Whether you have a small balcony garden or a large backyard, gardening can be a wonderful way to connect with nature and improve your environment.</p>
-        </section>
+    <!-- Navigation Bar Section -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
-        <!-- Gardening Tips Section -->
-        <section id="tips">
-            <h2>Gardening Tips</h2>
-            <ul>
-                <li><strong>Watering:</strong> Make sure to water your plants early in the morning to prevent evaporation.</li>
-                <li><strong>Soil:</strong> Use rich, well-draining soil for better plant health.</li>
-                <li><strong>Sunlight:</strong> Ensure your plants receive enough sunlight based on their specific needs.</li>
-                <li><strong>Pruning:</strong> Regularly prune your plants to encourage healthy growth and remove dead branches.</li>
-            </ul>
-        </section>
+    <!-- Content Section -->
+    <div id="home">
+        <h2>Home Section</h2>
+        <p>This is the home section of your website.</p>
+    </div>
 
-        <!-- Contact Form Section -->
-        <section id="contact">
-            <h2>Contact Us</h2>
-            <form action="submit_form.php" method="POST">
-                <label for="name">Name:</label><br>
-                <input type="text" id="name" name="name" required><br><br>
+    <div id="about">
+        <h2>About Section</h2>
+        <p>This is the about section of your website.</p>
+    </div>
 
-                <label for="email">Email:</label><br>
-                <input type="email" id="email" name="email" required><br><br>
+    <div id="services">
+        <h2>Services Section</h2>
+        <p>This is the services section of your website.</p>
+    </div>
 
-                <label for="message">Message:</label><br>
-                <textarea id="message" name="message" rows="4" required></textarea><br><br>
+    <div id="contact">
+        <h2>Contact Section</h2>
+        <p>This is the contact section of your website.</p>
+    </div>
 
-                <input type="submit" value="Send Message">
-            </form>
-        </section>
-    </main>
-
-    <!-- Footer Section -->
-    <footer>
-        <p>&copy; 2024 Gardening Hobbyist | All Rights Reserved</p>
-        <p>Follow us on <a href="#">Facebook</a>, <a href="#">Instagram</a>, and <a href="#">Twitter</a></p>
-    </footer>
 </body>
 </html>

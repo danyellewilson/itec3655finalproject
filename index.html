@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A website for gardening enthusiasts with tips, advice, and resources.">
+    <title>Gardening Hobbyist</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Gardening</a></li>
+                <li><a href="#tips">Gardening Tips</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <h1>Welcome to Gardening Hobbyist</h1>
+        <p>Your online guide to everything gardening!</p>
+    </header>
+
+    <!-- Main Content Section -->
+    <main>
+        <!-- About Gardening Section -->
+        <section id="about">
+            <h2>About Gardening</h2>
+            <p>Gardening is a relaxing and rewarding hobby that allows you to grow plants, flowers, and vegetables. Whether you have a small balcony garden or a large backyard, gardening can be a wonderful way to connect with nature and improve your environment.</p>
+        </section>
+
+        <!-- Gardening Tips Section -->
+        <section id="tips">
+            <h2>Gardening Tips</h2>
+            <ul>
+                <li><strong>Watering:</strong> Make sure to water your plants early in the morning to prevent evaporation.</li>
+                <li><strong>Soil:</strong> Use rich, well-draining soil for better plant health.</li>
+                <li><strong>Sunlight:</strong> Ensure your plants receive enough sunlight based on their specific needs.</li>
+                <li><strong>Pruning:</strong> Regularly prune your plants to encourage healthy growth and remove dead branches.</li>
+            </ul>
+        </section>
+
+        <!-- Contact Form Section -->
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form action="submit_form.php" method="POST">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" required></textarea><br><br>
+
+                <input type="submit" value="Send Message">
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Gardening Hobbyist | All Rights Reserved</p>
+        <p>Follow us on <a href="#">Facebook</a>, <a href="#">Instagram</a>, and <a href="#">Twitter</a></p>
+    </footer>
+</body>
+</html>

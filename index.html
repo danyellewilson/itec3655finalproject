@@ -16,8 +16,9 @@
         header {
             background-color: #4CAF50;
             color: white;
-            padding: 20px;
+            padding: 10px 0; /* Reduce padding to shrink the background height */
             text-align: center;
+            height: auto;  /* Let the height adjust based on the content */
         }
 
         header h1 {
@@ -28,11 +29,11 @@
         .flower-container {
             display: flex;
             justify-content: center;
-            padding: 40px 0; /* Increase space for larger logo */
+            padding: 10px 0; /* Reduced padding to keep space tight around the flower */
         }
 
         .flower-container img {
-            width: 300px; /* Flower size 5 times bigger than before (100px to 500px) */
+            width: 300px; /* Flower size remains unchanged */
             height: auto;
         }
 

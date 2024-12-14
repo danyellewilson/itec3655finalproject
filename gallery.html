@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gallery</title>
     <style>
-        /* General Styles */
+        /* Gen Style */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -27,7 +27,7 @@
             font-size: 3em;
         }
 
-        /* Navigation Menu Styles */
+        /* Nav Menu Style */
         nav {
             background-color: #333;
         }
@@ -56,10 +56,10 @@
             color: black;
         }
 
-        /* Gallery Styles */
+        /* Gallery Style */
         .gallery {
             display: grid;
-            grid-template-columns: repeat(3, 1fr); /* 3 images per row */
+            grid-template-columns: repeat(3, 1fr); 
             gap: 20px;
             padding: 20px;
             margin-top: 30px;
@@ -77,8 +77,40 @@
             transform: scale(1.1);
         }
 
-        /* Row for White Rose and Red Rose */
-        .gallery-row {
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <h1>Gallery</h1>
+    </header>
+
+    <!-- Nav Bar -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="start.html">Getting Started</a></li>
+            <li><a href="tips.html">Techniques & Tips</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="news.html">News</a></li>
+        </ul>
+    </nav>
+
+    <!-- Gallery -->
+    <div class="gallery">
+        <div class="gallery-item">
+            <img src="images/osunflower.jpg" alt="Osunflower">
+        </div>
+        
+        <div class="gallery-item">
+            <img src="images/purple.jpg" alt="Purple flower">
+        </div>
+        <div class="gallery-item">
+            <img src="images/pinkhibiscus.jpg" alt="Pink Hibiscus Flower"> 
+        </div>
+    </div>
+             .gallery-row {
             display: grid;
             grid-template-columns: repeat(2, 1fr); /* 2 images per row */
             gap: 20px;
@@ -91,18 +123,14 @@
             border-radius: 8px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
-    </style>
 
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
-</head>
-<body>
+     <div class="gallery">
+        <div class="gallery-item">
+            <img src="images/whiterose.jpg" alt="White Rose">
+        </div>
+            <div class="gallery">
+        <div class="gallery-item">
+            <img src="images/redrose.jpg" alt="Red Rose">
 
-    <header>
-        <h1>Gallery</h1>
-    </header>
-
-    <!-- Navigation Bar -->
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="start.html">Gett
+</body>
+</html>

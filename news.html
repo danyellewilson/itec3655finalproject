@@ -115,12 +115,6 @@
             background-color: #45a049;
         }
 
-        /* Content Section */
-        .content {
-            text-align: center;
-            padding: 50px 20px;
-        }
-
         /* Confirmation Message */
         .confirmation-message {
             display: none;
@@ -174,13 +168,58 @@
     <!-- Navigation Bar Section -->
     <nav>
         <ul>
-            <li><a href="index.html">Home</a></li> 
-            <li><a href="start.html">Getting Started</a></li> 
-            <li><a href="tips.html">Techniques & Tips</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="news.html">News</a></li>
-
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
-    
-  
+
+    <!-- Main Content Section -->
+    <div class="content">
+        <h2>Join the Newsletter</h2>
+        <p>Sign up for the latest updates and receive exclusive offers and gardening tips!</p>
+        
+        <!-- Sign Up Form -->
+        <div class="form-container">
+            <h2>Sign Up Form</h2>
+            
+            <form onsubmit="return validateForm()">
+                <!-- Name Input -->
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <!-- Email Input -->
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+
+                <!-- Phone Number Input -->
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <!-- Checkboxes -->
+                <div class="checkbox-group">
+                    <label>
+                        <input type="checkbox" id="receive_texts" name="receive_texts">
+                        Sign up to receive text messages
+                    </label>
+                    <br>
+                    <label>
+                        <input type="checkbox" id="receive_newsletter" name="receive_newsletter">
+                        Sign up to receive newsletter via email
+                    </label>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit">Sign Up</button>
+            </form>
+
+            <!-- Confirmation Message -->
+            <div id="confirmation-message" class="confirmation-message">
+                We are excited that you joined our newsletter. Happy planting!
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

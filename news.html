@@ -115,15 +115,6 @@
             background-color: #45a049;
         }
 
-        /* Confirmation Message */
-        .confirmation-message {
-            display: none;
-            font-size: 1.5em;
-            color: #4CAF50;
-            text-align: center;
-            margin-top: 20px;
-        }
-
     </style>
 
     <!-- Add Google Font for Calligraphy -->
@@ -151,8 +142,8 @@
                 return false;
             }
 
-            // If validation passes, show the confirmation message and prevent form submission
-            document.getElementById('confirmation-message').style.display = 'block';
+            // If validation passes, show the confirmation popup
+            alert("We are excited that you joined our newsletter. Happy planting!");
             return false;  // Prevent the form from submitting to a server
         }
     </script>
@@ -179,7 +170,7 @@
     <!-- Main Content Section -->
     <div class="content">
 
-        <!-Form -->
+        <!-- Form -->
         <div class="form-container">
             <h2>Join the Newsletter</h2>
                 <p>Sign up for the latest updates and receive exclusive gardening tips!</p>
@@ -200,7 +191,7 @@
                 <div class="checkbox-group">
                     <label>
                         <input type="checkbox" id="receive_texts" name="receive_texts">
-                        Sign up to receive the newsletter via email
+                        Sign up to receive the newsletter via text
                     </label>
                     <br>
                     <label>
@@ -213,10 +204,6 @@
                 <button type="submit">Sign Up</button>
             </form>
 
-            <!-- Confirmation Message -->
-            <div id="confirmation-message" class="confirmation-message">
-                We are excited that you joined our newsletter. Happy planting!
-            </div>
         </div>
     </div>
 

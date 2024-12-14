@@ -110,19 +110,26 @@
             <img src="images/pinkhibiscus.jpg" alt="Pink Hibiscus Flower"> 
         </div>
     </div>
-             .gallery-row {
+             .gallery {
             display: grid;
-            grid-template-columns: repeat(2, 1fr); /* 2 images per row */
+            grid-template-columns: repeat(3, 1fr); 
             gap: 20px;
+            padding: 20px;
             margin-top: 30px;
         }
 
-        .gallery-row img {
+        .gallery img {
             width: 100%;
             height: auto;
             border-radius: 8px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
         }
+
+        .gallery img:hover {
+            transform: scale(1.1);
+        }
+
 
      <div class="gallery">
         <div class="gallery-item">
@@ -132,5 +139,6 @@
         <div class="gallery-item">
             <img src="images/redrose.jpg" alt="Red Rose">
         </div>
+            </style>
 </body>
 </html>

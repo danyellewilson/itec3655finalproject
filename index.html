@@ -3,30 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
+    <title>My Website</title>
     <style>
         /* General Styles */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-image: url('images/flower-pattern.jpg'); /* Flower pattern background */
-            background-size: cover;
-            background-position: center;
-            color: white; /* Text color for better contrast */
         }
 
-        /* Header Styling */
+        /* Title Styling (flower logo as the header) */
         header {
+            color: white;
             text-align: center;
-            padding: 20px;
-            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+            height: auto;  /* Let the height adjust based on the content */
+            padding: 20px; /* Adjusted padding for better spacing */
+            background-color: #4CAF50; /* Added a background color for header */
         }
 
         header h1 {
             margin: 0;
-            font-family: 'Dancing Script', cursive;
+            font-family: 'Dancing Script', cursive; /* Calligraphy-style font */
             font-size: 3em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        header h1 img {
+            width: 50px; /* Size of the hibiscus icon */
+            height: auto;
+            margin-right: 15px; /* Space between the icon and the title */
         }
 
         /* Navigation Menu Styles */
@@ -58,12 +65,6 @@
             color: black;
         }
 
-        /* Content Section */
-        .content {
-            text-align: center;
-            padding: 50px 20px;
-        }
-
     </style>
 
     <!-- Add Google Font for Calligraphy -->
@@ -71,25 +72,42 @@
 </head>
 <body>
 
-    <!-- Header Section with About Title -->
+    <!-- Header Section with Title and Hibiscus Icon -->
     <header>
-        <h1>About</h1>
+        <h1>
+            Gardening from the Heart
+        </h1>
     </header>
 
     <!-- Navigation Bar Section -->
     <nav>
         <ul>
-            <li><a href="index.html">Home</a></li> <!-- Link to Home Page -->
-            <li><a href="about.html">About</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
             <li><a href="#services">Services</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
     <!-- Content Section -->
-    <div class="content">
+    <div id="home">
+        <h2>Home Section</h2>
+        <p>This is the home section of your website.</p>
+    </div>
+
+    <div id="about">
         <h2>About Section</h2>
-        <p>This is the about section of your website. Here you can add information about your website or organization.</p>
+        <p>This is the about section of your website.</p>
+    </div>
+
+    <div id="services">
+        <h2>Services Section</h2>
+        <p>This is the services section of your website.</p>
+    </div>
+
+    <div id="contact">
+        <h2>Contact Section</h2>
+        <p>This is the contact section of your website.</p>
     </div>
 
 </body>
